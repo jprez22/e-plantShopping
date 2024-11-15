@@ -16,6 +16,7 @@ const CartItem = ({ onContinueShopping }) => {
         totalCost += itemCost * itemQuantity;
       });
     setTotalAmount(totalCost);
+    return totalCost;
   };
 
   const handleContinueShopping = (e) => {
